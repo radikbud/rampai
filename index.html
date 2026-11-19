@@ -26,7 +26,6 @@
   </style>
 </head>
 <body class="antialiased selection:bg-sky-100 selection:text-sky-900">
-  <!-- Aksen Garis Warna Logo RN -->
   <div class="rn-stripe w-full"></div>
 
   <!-- Header Navigasi dengan Logo RN -->
@@ -93,7 +92,6 @@
           </div>
         </div>
 
-        <!-- Visual Hero Ketum & Sekjen RN Menyatu di Bawah Foto -->
         <div class="lg:col-span-6">
           <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm">
             <img
@@ -142,31 +140,27 @@
         </button>
       </div>
 
-      <!-- Filter Portal Media -->
       <div id="filterPortal" class="flex flex-wrap gap-2"></div>
-
-      <!-- Grid Daftar Kliping -->
       <div id="daftarKliping" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
     </section>
 
-    <!-- 03. Feed & Widget Media Sosial (9 Postingan per Platform) -->
+    <!-- 03. Feed & Widget Media Sosial (6 Item per Platform) -->
     <section id="kanal" class="space-y-6">
       <div>
         <span class="text-xs font-bold uppercase tracking-wider text-sky-700">03 &mdash; Feed &amp; Widget Media Sosial</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">9 Postingan Terbaru per Platform Rampai Nusantara</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">6 Item Terbaru per Platform Rampai Nusantara</h2>
         <p class="text-sm text-slate-600 mt-1">
-          Menampilkan 9 postingan/tayangan terbaru pada masing-masing kanal resmi YouTube, TikTok, Instagram, dan Facebook.
+          Tata letak ringkas 6 item per kanal resmi YouTube, TikTok, Instagram, dan Facebook.
         </p>
       </div>
 
       <div class="grid lg:grid-cols-12 gap-6 items-start">
-        <!-- Kolom Kiri: YouTube RSS Auto-Feed (9 Video) + Facebook Timeline (9 Postingan) -->
+        <!-- Kolom Kiri: YouTube RSS Auto-Feed (6 Video) + Facebook Timeline (6 Postingan) -->
         <div class="lg:col-span-5 space-y-6">
-          <!-- Widget YouTube RSS Auto-Feed (9 Item) -->
           <div class="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-emerald-500 p-5 shadow-sm space-y-4">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-600">YouTube RSS Auto-Feed &bull; 9 Video</div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-600">YouTube RSS Auto-Feed &bull; 6 Video</div>
                 <div class="font-extrabold text-slate-900 text-lg leading-snug mt-0.5">@rampainusantara_official</div>
               </div>
               <a
@@ -179,18 +173,17 @@
               </a>
             </div>
 
-            <div id="ytRssList" class="space-y-2 max-h-[380px] overflow-y-auto pr-1"></div>
+            <div id="ytRssList" class="space-y-2 max-h-[340px] overflow-y-auto pr-1"></div>
 
             <div class="p-3 rounded-xl bg-amber-50 border border-amber-200/80 text-xs text-amber-900 leading-relaxed">
-              Isi <code class="px-1 py-0.5 rounded bg-white text-rose-600 font-semibold">youtubeChannelId: "UC..."</code> pada <strong class="text-blue-700">KONFIG</strong> agar feed RSS 9 video ter-update otomatis setiap upload baru.
+              Isi <code class="px-1 py-0.5 rounded bg-white text-rose-600 font-semibold">youtubeChannelId: "UC..."</code> pada <strong class="text-blue-700">KONFIG</strong> agar feed RSS 6 video ter-update otomatis setiap upload baru.
             </div>
           </div>
 
-          <!-- Widget Facebook Timeline (9 Postingan) -->
           <div class="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-sky-500 p-5 shadow-sm space-y-4">
             <div class="flex items-center justify-between gap-2">
               <div>
-                <div class="text-[11px] font-bold uppercase tracking-wider text-sky-600">Facebook Timeline &bull; 9 Postingan</div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-sky-600">Facebook Timeline &bull; 6 Postingan</div>
                 <div class="font-extrabold text-slate-900 text-lg leading-snug mt-0.5">Rampai Nusantara Official</div>
               </div>
               <a
@@ -222,21 +215,21 @@
           </div>
         </div>
 
-        <!-- Kolom Kanan: Social Feed Box TikTok (9 Postingan) & Instagram (9 Postingan) -->
+        <!-- Kolom Kanan: Social Feed Box TikTok (6 Postingan) & Instagram (6 Postingan) -->
         <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-6">
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
             <div>
               <div class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Social Feed Box</div>
-              <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl">TikTok &amp; Instagram Official (9 Postingan / Platform)</h3>
+              <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl">TikTok &amp; Instagram Official (6 Postingan / Platform)</h3>
             </div>
             <span class="text-xs font-medium text-slate-400">@rampainusantara_official</span>
           </div>
 
-          <!-- Blok TikTok (9 Postingan) -->
+          <!-- Blok TikTok (6 Postingan) -->
           <div class="rounded-xl border border-slate-200 p-4 space-y-4">
             <div class="flex items-center justify-between gap-2">
               <div class="text-[11px] font-bold uppercase tracking-wider text-rose-600">
-                TikTok &bull; 9 Postingan Terbaru
+                TikTok &bull; 6 Postingan Terbaru
               </div>
               <a
                 href="https://www.tiktok.com/@rampainusantara_official"
@@ -267,15 +260,14 @@
               </div>
             </div>
 
-            <!-- Grid 9 Postingan TikTok -->
             <div id="tiktokPostGrid" class="grid grid-cols-3 gap-2.5"></div>
           </div>
 
-          <!-- Blok Instagram (9 Postingan) -->
+          <!-- Blok Instagram (6 Postingan) -->
           <div class="rounded-xl border border-slate-200 p-4 space-y-4">
             <div class="flex items-center justify-between">
               <div class="text-[11px] font-bold uppercase tracking-wider text-amber-600">
-                Instagram &bull; 9 Postingan Terbaru
+                Instagram &bull; 6 Postingan Terbaru
               </div>
               <a
                 href="https://www.instagram.com/rampainusantara_official/"
@@ -303,7 +295,6 @@
               </div>
             </div>
 
-            <!-- Grid 9 Postingan Instagram -->
             <div id="igPostGrid" class="grid grid-cols-3 gap-2"></div>
           </div>
         </div>
@@ -377,7 +368,6 @@
     </section>
   </main>
 
-  <!-- Floating WhatsApp Quick Button -->
   <a
     id="btnWaFloating"
     href="#sekretariat"
@@ -411,7 +401,10 @@
     const ALAMAT_SEKRETARIAT = "Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420";
 
     const KONFIG = {
-      youtubeChannelId: ""
+      youtubeChannelId: "", // Isi "UC..." untuk 6 video terbaru otomatis via RSS YouTube
+      customEmbedTikTok: "",
+      customEmbedInstagram: "",
+      customEmbedFacebook: ""
     };
 
     const BERITA_ARSIP_RN = [
@@ -534,6 +527,7 @@
       }
     ];
 
+    // Data 6 item per platform
     const FEED_SOSMED_RN = {
       youtube: [
         { judul: "Relawan Dukung Gibran 2029, Semar: Masa Mau Dilarang?", tanggal: "14/11/2026", thumb: "https://img.youtube.com/vi/yAFGtJFcKkc/hqdefault.jpg", link: "http://www.youtube.com/watch?v=yAFGtJFcKkc" },
@@ -541,22 +535,19 @@
         { judul: "Update Tayangan Resmi #3 @rampainusantara_official", tanggal: "Terbaru #3", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
         { judul: "Update Tayangan Resmi #4 @rampainusantara_official", tanggal: "Terbaru #4", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
         { judul: "Update Tayangan Resmi #5 @rampainusantara_official", tanggal: "Terbaru #5", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
-        { judul: "Update Tayangan Resmi #6 @rampainusantara_official", tanggal: "Terbaru #6", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
-        { judul: "Update Tayangan Resmi #7 @rampainusantara_official", tanggal: "Terbaru #7", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
-        { judul: "Update Tayangan Resmi #8 @rampainusantara_official", tanggal: "Terbaru #8", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
-        { judul: "Update Tayangan Resmi #9 @rampainusantara_official", tanggal: "Terbaru #9", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" }
+        { judul: "Update Tayangan Resmi #6 @rampainusantara_official", tanggal: "Terbaru #6", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" }
       ],
-      tiktok: Array.from({ length: 9 }, (_, i) => ({
+      tiktok: Array.from({ length: 6 }, (_, i) => ({
         label: `Video #${i + 1}`,
         img: `tiktok-post-${i + 1}.jpg`,
         link: "https://www.tiktok.com/@rampainusantara_official"
       })),
-      instagram: Array.from({ length: 9 }, (_, i) => ({
+      instagram: Array.from({ length: 6 }, (_, i) => ({
         label: `Post #${i + 1}`,
         img: `ig-post-${i + 1}.jpg`,
         link: "https://www.instagram.com/rampainusantara_official/"
       })),
-      facebook: Array.from({ length: 9 }, (_, i) => ({
+      facebook: Array.from({ length: 6 }, (_, i) => ({
         label: `Foto #${i + 1}`,
         img: `fb-post-${i + 1}.jpg`,
         link: "https://www.facebook.com/profile.php?id=61595219347834&sk=photos"
@@ -565,7 +556,7 @@
 
     function renderYouTubeList(items) {
       const container = document.getElementById("ytRssList");
-      container.innerHTML = items.slice(0, 9).map((vid, idx) => {
+      container.innerHTML = items.slice(0, 6).map((vid, idx) => {
         const thumbHtml = vid.thumb
           ? `<img src="${vid.thumb}" alt="${vid.judul}" onerror="this.style.display='none';" class="w-20 h-14 rounded-lg object-cover shrink-0 bg-slate-100" />`
           : `<div class="w-20 h-14 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-xs font-bold text-slate-500 shrink-0">#${idx + 1}</div>`;
@@ -581,23 +572,29 @@
       }).join("");
     }
 
-    function renderGrid9(containerId, items, showPlayIcon) {
+    function renderGrid6(containerId, items, showPlayIcon, customHtml) {
       const container = document.getElementById(containerId);
-      container.innerHTML = items.slice(0, 9).map((post, idx) => `
+      if (customHtml && customHtml.trim()) {
+        container.className = "w-full rounded-lg overflow-hidden";
+        container.innerHTML = customHtml;
+        return;
+      }
+      container.className = "grid grid-cols-3 gap-2.5";
+      container.innerHTML = items.slice(0, 6).map((post, idx) => `
         <a
           href="${post.link}"
           target="_blank"
           rel="noopener noreferrer"
-          class="group relative aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center text-center p-2"
+          class="group relative aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center text-center"
         >
           <img
             src="${post.img}"
             alt="${post.label}"
             onload="this.nextElementSibling.style.display='none';"
             onerror="this.style.display='none';"
-            class="w-full h-full object-cover group-hover:scale-105 transition"
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition"
           />
-          <div class="flex flex-col items-center justify-center gap-1">
+          <div class="flex flex-col items-center justify-center gap-1 p-2">
             <img src="logo-rn.png" alt="" onerror="this.style.display='none';" class="w-7 h-7 object-cover rounded-full opacity-80" />
             <span class="text-[11px] font-bold text-slate-600">${post.label || `#${idx + 1}`}</span>
           </div>
@@ -671,7 +668,7 @@
         const data = await res.json();
         if (!data.items || !data.items.length) return;
 
-        const mapped = data.items.slice(0, 9).map(vid => {
+        const mapped = data.items.slice(0, 6).map(vid => {
           const idMatch = (vid.link || "").match(/(?:v=|\/)([0-9A-Za-z_-]{11})/);
           return {
             judul: vid.title,
@@ -719,9 +716,9 @@
     renderFilter();
     renderKliping();
     renderYouTubeList(FEED_SOSMED_RN.youtube);
-    renderGrid9("tiktokPostGrid", FEED_SOSMED_RN.tiktok, true);
-    renderGrid9("igPostGrid", FEED_SOSMED_RN.instagram, true);
-    renderGrid9("fbPostGrid", FEED_SOSMED_RN.facebook, false);
+    renderGrid6("tiktokPostGrid", FEED_SOSMED_RN.tiktok, true, KONFIG.customEmbedTikTok);
+    renderGrid6("igPostGrid", FEED_SOSMED_RN.instagram, true, KONFIG.customEmbedInstagram);
+    renderGrid6("fbPostGrid", FEED_SOSMED_RN.facebook, false, KONFIG.customEmbedFacebook);
     muatYouTubeRSS();
   </script>
 </body>
