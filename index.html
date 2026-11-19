@@ -19,10 +19,6 @@
       height: 4px;
       background: linear-gradient(90deg, #EAB308 0%, #16A34A 33%, #0EA5E9 66%, #DC2626 100%);
     }
-    .rn-logo-ring {
-      background: conic-gradient(from 180deg, #EAB308, #DC2626, #0EA5E9, #16A34A, #EAB308);
-      padding: 3px;
-    }
   </style>
 </head>
 <body class="antialiased selection:bg-sky-100 selection:text-sky-900">
@@ -32,15 +28,13 @@
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
       <a href="#" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full rn-logo-ring shrink-0 shadow-xs">
-          <div class="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
-            <img
-              src="logo-rn.png"
-              alt="Logo Rampai Nusantara"
-              onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=128';"
-              class="w-full h-full object-cover object-center scale-110"
-            />
-          </div>
+        <div class="w-10 h-10 rounded-full bg-white border border-emerald-600 overflow-hidden flex items-center justify-center p-1 shrink-0">
+          <img
+            src="logo-rn.png"
+            alt="Logo Rampai Nusantara"
+            onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=128';"
+            class="w-full h-full object-contain object-center"
+          />
         </div>
         <div class="leading-tight">
           <div class="font-bold text-slate-900 text-sm sm:text-base">Rampai Nusantara</div>
@@ -201,14 +195,14 @@
             </div>
           </div>
 
-          <!-- Logo Utama Besar dengan 1 Ring Hijau -->
+          <!-- Logo Asli Rampai Nusantara (1 Lingkaran Tipis Hijau) -->
           <div class="flex flex-col items-center justify-center py-3">
-            <div class="w-40 h-40 sm:w-44 sm:h-44 rounded-full bg-white border-2 border-emerald-600 overflow-hidden flex items-center justify-center shadow-sm transition-transform duration-300 hover:scale-[1.02]">
+            <div class="w-44 h-44 sm:w-48 sm:h-48 rounded-full bg-white border-2 border-emerald-600 overflow-hidden flex items-center justify-center p-3 shadow-xs transition-transform duration-300 hover:scale-[1.02]">
               <img
                 src="logo-rn.png"
                 alt="Logo Resmi Rampai Nusantara"
-                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=16a34a&color=ffffff&size=256';"
-                class="w-full h-full object-cover object-center"
+                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=ffffff&color=16a34a&size=256';"
+                class="w-full h-full object-contain object-center"
               />
             </div>
           </div>
@@ -556,7 +550,8 @@
         borderTop: "border-t-red-600",
         iconBox: "bg-red-600 text-white",
         badge: "bg-red-50 text-red-700 border-red-200",
-        tombol: "Buka YouTube",
+        tombol: "bg-red-600 hover:bg-red-700 text-white",
+        labelTombol: "Buka YouTube",
         url: "https://www.youtube.com/@Rampai_Nusantara"
       }
     ];
