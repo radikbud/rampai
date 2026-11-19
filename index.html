@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth" style="color-scheme: light;">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light only" />
-  <meta name="supported-color-schemes" content="light" />
-  <meta name="theme-color" content="#0284C7" />
   <title>Rampai Nusantara — Satu Frekuensi, Peduli Negeri</title>
   <link rel="icon" type="image/png" href="logo-rn.png" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,41 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      color-scheme: light only;
-    }
-    html, body {
+    body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #F8FAFC !important;
-      color: #0F172A !important;
-      color-scheme: light only;
-      -webkit-text-size-adjust: 100%;
+      background-color: #F8FAFC;
+      color: #0F172A;
     }
     .rn-stripe {
-      height: 4px;
+      height: 3px;
       background: linear-gradient(90deg, #EAB308 0%, #16A34A 33%, #0EA5E9 66%, #DC2626 100%);
-    }
-    /* Alas putih mengikuti lengkungan logo tanpa sudut kotak tajam */
-    .rn-logo-contour {
-      background: radial-gradient(circle at 52% 48%, #FFFFFF 64%, rgba(255, 255, 255, 0.92) 76%, rgba(255, 255, 255, 0) 100%);
-      border-radius: 58% 42% 52% 48% / 50% 56% 44% 50%;
     }
   </style>
 </head>
-<body class="antialiased selection:bg-sky-100 selection:text-sky-900">
+<body class="antialiased selection:bg-emerald-100 selection:text-emerald-950">
   <div class="rn-stripe w-full"></div>
 
-  <!-- Header Navigasi dengan Logo RN -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200/90">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
       <a href="#" class="flex items-center gap-3 min-w-0">
-        <div class="w-11 h-11 rn-logo-contour overflow-hidden flex items-center justify-center p-1 shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-white border border-emerald-600/70 p-1 flex items-center justify-center shrink-0">
           <img
             src="logo-rn.png"
             alt="Logo Rampai Nusantara"
             loading="eager"
             decoding="async"
-            data-rn-logo="header"
+            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22 viewBox=%220 0 80 80%22%3E%3Crect width=%2280%22 height=%2280%22 rx=%2216%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2240%22 y=%2248%22 text-anchor=%22middle%22 fill=%22%2316a34a%22 font-family=%22sans-serif%22 font-size=%2228%22 font-weight=%22bold%22%3ERN%3C/text%3E%3C/svg%3E';"
             class="w-full h-full object-contain object-center"
           />
         </div>
@@ -57,31 +44,28 @@
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600">
-        <a href="#profil" class="hover:text-sky-700 transition">01. Profil</a>
-        <a href="#identitas-organisasi" class="hover:text-sky-700 transition">02. Visi, Logo &amp; AD/ART</a>
-        <a href="#kliping" class="hover:text-sky-700 transition">03. Kliping Media</a>
-        <a href="#kanal" class="hover:text-sky-700 transition">04. Kanal Resmi</a>
-        <a href="#sekretariat" class="hover:text-sky-700 transition">05. Sekretariat</a>
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#profil" class="hover:text-slate-900 transition">Profil</a>
+        <a href="#identitas-organisasi" class="hover:text-slate-900 transition">Visi, Logo &amp; AD/ART</a>
+        <a href="#kliping" class="hover:text-slate-900 transition">Kliping Media</a>
+        <a href="#kanal" class="hover:text-slate-900 transition">Kanal Resmi</a>
+        <a href="#sekretariat" class="hover:text-slate-900 transition">Sekretariat</a>
       </nav>
 
-      <a href="#sekretariat" class="inline-flex items-center px-3.5 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-semibold transition shrink-0">
+      <a href="#sekretariat" class="inline-flex items-center px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold transition shrink-0">
         Hubungi WA
       </a>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-16">
-    <!-- 01. Hero & Foto Pimpinan -->
-    <section id="profil" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-16">
+    <!-- 01. Profil & Pimpinan -->
+    <section id="profil" class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-10">
       <div class="grid lg:grid-cols-12 gap-8 items-center">
         <div class="lg:col-span-6 space-y-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 text-sky-800 text-xs font-semibold border border-sky-100">
-            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span class="w-2 h-2 rounded-full bg-sky-500"></span>
-            <span class="w-2 h-2 rounded-full bg-red-600"></span>
-            01 &mdash; SATU FREKUENSI, PEDULI NEGERI
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            Satu Frekuensi, Peduli Negeri
           </div>
 
           <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -89,37 +73,36 @@
           </h1>
 
           <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Merawat kepedulian sosial dan semangat kebangsaan di tengah dinamika zaman. Portal resmi <strong>Dewan Eksekutif Nasional Rampai Nusantara</strong> menghimpun rekam jejak pernyataan sikap, kegiatan organisasi, identitas gerakan, serta kliping pemberitaan lintas media nasional.
+            Portal resmi <strong>Dewan Eksekutif Nasional Rampai Nusantara</strong> yang menghimpun arah perjuangan, identitas organisasi, dokumentasi kegiatan, serta arsip pemberitaan media nasional.
           </p>
 
           <div class="flex flex-wrap gap-3 pt-2">
-            <a href="#identitas-organisasi" class="px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-sm font-semibold transition">
+            <a href="#identitas-organisasi" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold transition">
               Visi, Logo &amp; AD/ART
             </a>
-            <a href="#kliping" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold transition">
-              Jelajahi Kliping Berita
+            <a href="#kliping" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 text-sm font-semibold transition">
+              Kliping Berita
             </a>
           </div>
         </div>
 
-        <!-- Foto Ketum & Sekjen RN -->
         <div class="lg:col-span-6">
-          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm">
+          <div class="rounded-2xl border border-slate-200/90 bg-slate-50/50 overflow-hidden">
             <img
               src="ketum-sekjen-rn.jpeg"
               alt="Ketua Umum Mardiansyah Semar dan Sekretaris Jenderal Satria Chaniago Rampai Nusantara"
               loading="eager"
               decoding="async"
-              onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22600%22 height=%22360%22 viewBox=%220 0 600 360%22%3E%3Crect width=%22600%22 height=%22360%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%230284c7%22 font-family=%22sans-serif%22 font-size=%2224%22 font-weight=%22bold%22%3ERampai Nusantara%3C/text%3E%3C/svg%3E';"
+              onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22600%22 height=%22360%22 viewBox=%220 0 600 360%22%3E%3Crect width=%22600%22 height=%22360%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%230f172a%22 font-family=%22sans-serif%22 font-size=%2222%22 font-weight=%22bold%22%3ERampai Nusantara%3C/text%3E%3C/svg%3E';"
               class="w-full h-64 sm:h-80 object-contain object-center bg-white"
             />
-            <div class="px-5 py-4 border-t border-slate-200 space-y-3 bg-slate-50/40">
+            <div class="px-5 py-4 border-t border-slate-200/80 bg-white space-y-2.5">
               <div class="grid grid-cols-2 gap-4">
-                <div class="border-l-2 border-amber-400 pl-2.5">
+                <div class="border-l-2 border-amber-500 pl-3">
                   <div class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Ketua Umum</div>
                   <div class="font-bold text-slate-900 text-sm">Mardiansyah Semar</div>
                 </div>
-                <div class="border-l-2 border-sky-600 pl-2.5">
+                <div class="border-l-2 border-sky-600 pl-3">
                   <div class="text-[11px] font-bold uppercase tracking-wider text-sky-700">Sekretaris Jenderal</div>
                   <div class="font-bold text-slate-900 text-sm">Satria Chaniago</div>
                 </div>
@@ -133,136 +116,138 @@
       </div>
     </section>
 
-    <!-- 02. Visi Misi, Arti Logo & Mars, serta AD/ART -->
+    <!-- 02. Visi Misi, Logo & Mars, serta AD/ART -->
     <section id="identitas-organisasi" class="space-y-8">
       <div class="border-b border-slate-200 pb-4">
-        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">02 &mdash; Landasan &amp; Identitas Organisasi</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Visi Misi, Arti Logo &amp; Mars, serta AD/ART</h2>
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Landasan Organisasi</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Visi Misi, Logo &amp; Mars, serta AD/ART</h2>
         <p class="text-sm text-slate-600 mt-1">
-          Arah perjuangan, makna simbolik gerakan, lagu kebanggaan organisasi, dan tata kelola dasar Rampai Nusantara.
+          Arah gerakan, makna simbolik identitas, lagu kebanggaan, dan pedoman tata kelola organisasi.
         </p>
       </div>
 
-      <!-- A. Visi & Misi -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+      <!-- Visi & Misi -->
+      <div class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8">
         <div class="grid lg:grid-cols-12 gap-6 items-start">
-          <div class="lg:col-span-5 p-5 rounded-xl bg-sky-50/80 border border-sky-100 space-y-2.5">
-            <div class="text-xs font-bold uppercase tracking-wider text-sky-800">Visi Organisasi</div>
+          <div class="lg:col-span-5 p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Visi Organisasi</div>
             <p class="text-sm sm:text-base font-bold text-slate-900 leading-relaxed">
-              Mewujudkan Rampai Nusantara sebagai rumah gerakan kebangsaan yang solid, progresif, dan inklusif—yang menyatukan energi anak muda dan kekuatan akar rumput untuk mendorong aksi sosial nyata serta kemajuan Indonesia.
+              Mewujudkan Rampai Nusantara sebagai rumah gerakan kebangsaan yang solid, progresif, dan inklusif—menyatukan energi anak muda dan kekuatan akar rumput untuk aksi sosial nyata serta kemajuan Indonesia.
             </p>
           </div>
 
           <div class="lg:col-span-7 space-y-3">
-            <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Misi Organisasi</div>
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-700">Misi Organisasi</div>
             <ul class="space-y-2.5 text-sm text-slate-700 leading-relaxed">
               <li class="flex gap-2.5">
                 <span class="font-bold text-emerald-700 shrink-0">01.</span>
-                <span><strong>Aksi nyata di lapangan untuk masyarakat:</strong> Menghadirkan kepedulian langsung melalui kegiatan sosial, solidaritas warga, dan tanggap bencana.</span>
+                <span><strong>Aksi nyata di lapangan:</strong> Menghadirkan kepedulian langsung melalui kegiatan sosial, solidaritas warga, dan tanggap bencana.</span>
               </li>
               <li class="flex gap-2.5">
                 <span class="font-bold text-sky-700 shrink-0">02.</span>
-                <span><strong>Mengawal aspirasi daerah secara santun dan tegas:</strong> Menjadi jembatan suara masyarakat dan anak muda dalam mendorong kebijakan publik yang berpihak pada rakyat.</span>
+                <span><strong>Mengawal aspirasi daerah:</strong> Menjadi jembatan suara masyarakat dan anak muda dalam mendorong kebijakan publik yang berpihak pada rakyat.</span>
               </li>
               <li class="flex gap-2.5">
                 <span class="font-bold text-amber-700 shrink-0">03.</span>
-                <span><strong>Menguatkan jejaring relawan &amp; pengurus lintas wilayah:</strong> Membangun solidaritas pengurus dan komunitas dari daerah hingga pusat dalam satu frekuensi kebangsaan.</span>
+                <span><strong>Menguatkan jejaring lintas wilayah:</strong> Membangun solidaritas pengurus dan relawan dari daerah hingga pusat dalam satu frekuensi kebangsaan.</span>
               </li>
               <li class="flex gap-2.5">
-                <span class="font-bold text-rose-700 shrink-0">04.</span>
-                <span><strong>Menjaga persatuan &amp; sikap kritis sehat:</strong> Mendorong ruang diskusi yang dewasa dan anti-provokasi di tengah dinamika zaman.</span>
+                <span class="font-bold text-red-700 shrink-0">04.</span>
+                <span><strong>Menjaga persatuan &amp; diskusi sehat:</strong> Mendorong sikap dewasa dan anti-provokasi di tengah dinamika zaman.</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- B. Arti Logo & Mars Rampai Nusantara -->
+      <!-- Logo & Mars -->
       <div class="grid lg:grid-cols-12 gap-6 items-stretch">
-        <!-- Arti Logo -->
-        <div class="lg:col-span-6 bg-white rounded-2xl border border-slate-200 border-t-4 border-t-amber-400 p-6 shadow-sm flex flex-col justify-between space-y-5">
-          <div class="space-y-4">
-            <div>
-              <div class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Simbol &amp; Makna</div>
-              <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl mt-0.5">Arti Logo Rampai Nusantara</h3>
-              <p class="text-xs text-slate-500 mt-1">Identitas visual kesatuan &amp; semangat gerakan</p>
+        <!-- Logo & Makna -->
+        <div class="lg:col-span-6 bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 flex flex-col justify-between space-y-6">
+          <div class="space-y-5">
+            <div class="flex items-center justify-between gap-3">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Identitas Visual</div>
+                <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl mt-0.5">Arti Logo Rampai Nusantara</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80 shrink-0">
+                Logo Resmi
+              </span>
             </div>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Logo <strong>Rampai Nusantara</strong> melambangkan keberagaman Nusantara yang terangkai dalam satu ikatan perjuangan, kebersamaan lintas generasi, serta semangat bergerak bersama demi kepentingan bangsa.
-            </p>
+            <!-- Tampilan Logo Bersih & Tajam -->
+            <div class="py-4 px-5 rounded-2xl bg-white border border-slate-200/90 flex flex-col items-center justify-center">
+              <div class="w-40 h-40 sm:w-44 sm:h-44 rounded-3xl bg-white border border-emerald-600/75 p-3 flex items-center justify-center">
+                <img
+                  src="logo-rn.png"
+                  alt="Logo Resmi Rampai Nusantara"
+                  loading="eager"
+                  decoding="async"
+                  onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22180%22 height=%22180%22 viewBox=%220 0 180 180%22%3E%3Crect width=%22180%22 height=%22180%22 rx=%2228%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2290%22 y=%2296%22 text-anchor=%22middle%22 fill=%22%2316a34a%22 font-family=%22sans-serif%22 font-size=%2248%22 font-weight=%22bold%22%3ERN%3C/text%3E%3Ctext x=%2290%22 y=%22126%22 text-anchor=%22middle%22 fill=%22%23334155%22 font-family=%22sans-serif%22 font-size=%2214%22%3ERampai Nusantara%3C/text%3E%3C/svg%3E';"
+                  class="w-full h-full object-contain object-center"
+                />
+              </div>
+            </div>
 
-            <div class="grid sm:grid-cols-2 gap-3 text-xs">
-              <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-100">
+            <!-- Makna Elemen Utama -->
+            <div class="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900">Inisial &ldquo;RN&rdquo; &amp; Tulisan Rampai Nusantara:</strong> Menegaskan identitas organisasi <strong>Rampai Nusantara</strong> sebagai wadah kebangsaan yang merangkai keberagaman aspirasi, solidaritas, dan langkah bersama.
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900">Peta Indonesia / Nusantara:</strong> Menggambarkan ruang gerak, jangkauan kepedulian, serta komitmen merawat persatuan dan keutuhan negeri dari Sabang sampai Merauke.
+              </div>
+            </div>
+
+            <!-- Makna Warna -->
+            <div class="grid grid-cols-2 gap-2.5 text-xs">
+              <div class="p-3 rounded-xl bg-amber-50/60 border border-amber-200/70">
                 <div class="font-bold text-amber-900">Kuning Emas</div>
-                <p class="text-slate-600 mt-1">Semangat optimisme, kejayaan cita-cita, dan harapan kemajuan bersama.</p>
+                <p class="text-slate-600 mt-0.5">Optimisme, kejayaan cita-cita, dan harapan maju bersama.</p>
               </div>
-              <div class="p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-100">
+              <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200/70">
                 <div class="font-bold text-emerald-900">Hijau</div>
-                <p class="text-slate-600 mt-1">Pertumbuhan, kepedulian sosial, kehidupan, dan keberlanjutan.</p>
+                <p class="text-slate-600 mt-0.5">Pertumbuhan, kepedulian sosial, dan keberlanjutan.</p>
               </div>
-              <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-100">
+              <div class="p-3 rounded-xl bg-sky-50/60 border border-sky-200/70">
                 <div class="font-bold text-sky-900">Biru</div>
-                <p class="text-slate-600 mt-1">Ketenangan sikap, kedewasaan gagasan, dan luasnya jangkauan Nusantara.</p>
+                <p class="text-slate-600 mt-0.5">Ketenangan sikap, kedewasaan gagasan, dan luasnya Nusantara.</p>
               </div>
-              <div class="p-3.5 rounded-xl bg-red-50/70 border border-red-100">
+              <div class="p-3 rounded-xl bg-red-50/60 border border-red-200/70">
                 <div class="font-bold text-red-900">Merah</div>
-                <p class="text-slate-600 mt-1">Keberanian, ketegasan prinsip, dan energi juang anak muda.</p>
+                <p class="text-slate-600 mt-0.5">Keberanian, ketegasan prinsip, dan energi juang anak muda.</p>
               </div>
             </div>
-          </div>
-
-          <!-- Logo Asli Rampai Nusantara Mengikuti Lengkungan (Tanpa Kotak) -->
-          <div class="flex flex-col items-center justify-center py-3">
-            <div class="w-44 h-44 sm:w-52 sm:h-52 rn-logo-contour flex items-center justify-center p-2 transition-transform duration-300 hover:scale-[1.02]">
-              <img
-                src="logo-rn.png"
-                alt="Logo Resmi Rampai Nusantara"
-                loading="eager"
-                decoding="async"
-                data-rn-logo="showcase"
-                class="w-full h-full object-contain object-center"
-              />
-            </div>
-          </div>
-
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 leading-relaxed space-y-2">
-            <p>
-              <strong>Inisial &ldquo;RN&rdquo; &amp; Tulisan Rampai Nusantara:</strong> Menegaskan identitas organisasi <strong>Rampai Nusantara</strong> sebagai wadah perjuangan kebangsaan yang merangkai keberagaman aspirasi, solidaritas, dan langkah bersama.
-            </p>
-            <p>
-              <strong>Peta Indonesia / Nusantara:</strong> Menggambarkan ruang gerak, jangkauan kepedulian, serta komitmen merawat persatuan dan keutuhan negeri dari Sabang sampai Merauke.
-            </p>
           </div>
         </div>
 
-        <!-- Mars Rampai Nusantara + Syair -->
-        <div class="lg:col-span-6 bg-white rounded-2xl border border-slate-200 border-t-4 border-t-red-600 p-6 shadow-sm flex flex-col justify-between space-y-4">
+        <!-- Mars Rampai Nusantara -->
+        <div class="lg:col-span-6 bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 flex flex-col justify-between space-y-5">
           <div class="space-y-4">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <div class="text-[11px] font-bold uppercase tracking-wider text-red-600">Lagu Kebanggaan Organisasi</div>
-                <h3 class="font-extrabold text-slate-900 text-lg">Mars Rampai Nusantara</h3>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-red-600">Lagu Kebanggaan</div>
+                <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl mt-0.5">Mars Rampai Nusantara</h3>
               </div>
               <a
                 href="https://www.youtube.com/@Rampai_Nusantara"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs font-bold text-red-600 hover:underline shrink-0"
+                class="text-xs font-bold text-slate-700 hover:text-red-600 transition shrink-0"
               >
-                Kanal YouTube &rarr;
+                YouTube &rarr;
               </a>
             </div>
 
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              <strong>Mars Rampai Nusantara</strong> menjadi penyatu irama dan gelora semangat seluruh jajaran pengurus, relawan, dan anggota dalam merawat persatuan serta mengabdi bagi negeri.
+              Menyatukan semangat pengurus, relawan, dan anggota dalam merawat persatuan serta mengabdi bagi negeri.
             </p>
 
-            <div id="wadahEmbedMars" class="aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-900">
+            <div class="aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-900">
               <iframe
                 class="w-full h-full"
                 src="https://www.youtube.com/embed/qc3p2kdtI6I?si=ildJclRNGqw7A_5I"
-                title="YouTube video player"
+                title="Mars Rampai Nusantara"
                 loading="lazy"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -272,7 +257,7 @@
             </div>
           </div>
 
-          <details class="rounded-xl border border-slate-200 bg-slate-50/80 p-3.5 text-xs text-slate-700">
+          <details class="rounded-xl border border-slate-200/90 bg-slate-50/70 p-4 text-xs text-slate-700">
             <summary class="cursor-pointer font-bold text-slate-900 select-none">
               Baca Syair Mars Rampai Nusantara
             </summary>
@@ -324,61 +309,61 @@
         </div>
       </div>
 
-      <!-- C. AD / ART Rampai Nusantara -->
-      <div class="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-sky-600 p-6 sm:p-8 shadow-sm space-y-5">
+      <!-- AD / ART -->
+      <div class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 space-y-5">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
           <div>
-            <div class="text-[11px] font-bold uppercase tracking-wider text-sky-700">Konstitusi &amp; Tata Kelola</div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Tata Kelola</div>
             <h3 class="font-extrabold text-slate-900 text-xl">Anggaran Dasar &amp; Anggaran Rumah Tangga (AD/ART)</h3>
           </div>
           <span class="text-xs font-semibold text-slate-500">Dewan Eksekutif Nasional</span>
         </div>
 
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          <strong>AD/ART Rampai Nusantara</strong> berfungsi sebagai pedoman dasar penyelenggaraan organisasi, keanggotaan, permusyawaratan, serta pembagian tugas kepengurusan dari tingkat pusat hingga daerah agar gerakan berjalan tertib, akuntabel, dan berkesinambungan.
+          Pedoman dasar penyelenggaraan organisasi, keanggotaan, permusyawaratan, serta pembagian tugas kepengurusan dari tingkat pusat hingga daerah agar gerakan berjalan tertib dan akuntabel.
         </p>
 
         <div class="grid md:grid-cols-3 gap-4 text-xs sm:text-sm">
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-            <div class="text-xs font-bold uppercase tracking-wider text-sky-700">Anggaran Dasar (AD)</div>
-            <p class="text-slate-700 leading-relaxed">
-              Memuat asas, tujuan, sifat organisasi, kedudukan, lambang/atribut, serta pokok-pokok kedaulatan dan struktur organisasi Rampai Nusantara.
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-800">Anggaran Dasar (AD)</div>
+            <p class="text-slate-600 leading-relaxed">
+              Memuat asas, tujuan, sifat organisasi, kedudukan, atribut, serta pokok-pokok kedaulatan dan struktur organisasi.
             </p>
           </div>
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
             <div class="text-xs font-bold uppercase tracking-wider text-emerald-700">Anggaran Rumah Tangga (ART)</div>
-            <p class="text-slate-700 leading-relaxed">
-              Mengatur tata cara keanggotaan, hak dan kewajiban, mekanisme Rakernas/Musyawarah, pembentukan pengurus wilayah/daerah, serta keuangan organisasi.
+            <p class="text-slate-600 leading-relaxed">
+              Mengatur tata cara keanggotaan, hak dan kewajiban, mekanisme Rakernas/Musyawarah, pembentukan kepengurusan daerah, serta keuangan.
             </p>
           </div>
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
             <div class="text-xs font-bold uppercase tracking-wider text-amber-700">Akses Dokumen Resmi</div>
-            <p class="text-slate-700 leading-relaxed">
-              Kebutuhan salinan resmi atau verifikasi dokumen AD/ART dapat dikoordinasikan langsung melalui Sekretariat Nasional di Cipinang Muara, Jakarta.
+            <p class="text-slate-600 leading-relaxed">
+              Kebutuhan salinan resmi atau koordinasi dokumen AD/ART dapat menghubungi Sekretariat Nasional di Jakarta.
             </p>
-            <a href="#sekretariat" class="inline-flex items-center text-xs font-bold text-sky-700 hover:underline pt-1">
-              Koordinasi dengan Sekretariat &rarr;
+            <a href="#sekretariat" class="inline-flex items-center text-xs font-bold text-slate-900 hover:underline pt-1">
+              Hubungi Sekretariat &rarr;
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 03. Kliping Pemberitaan Media Nasional -->
+    <!-- 03. Kliping Berita -->
     <section id="kliping" class="space-y-6">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-sky-700">03 &mdash; Arsip Pemberitaan</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Arsip Pemberitaan</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Kliping Berita Rampai Nusantara</h2>
           <p class="text-sm text-slate-600 mt-1">
-            Menampilkan arsip kurasi berita dari masa awal hingga terbaru, dilengkapi filter portal dan tombol urut waktu.
+            Kurasi pemberitaan dari masa awal hingga terbaru dengan filter portal dan urutan waktu.
           </p>
         </div>
 
         <button
           id="btnSortWaktu"
           type="button"
-          class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-sky-50 text-sky-700 border border-sky-200 text-sm font-semibold shadow-sm transition shrink-0"
+          class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 text-sm font-semibold transition shrink-0"
         >
           <span id="sortLabel">Urutan: Lama &rarr; Terbaru</span>
         </button>
@@ -388,35 +373,33 @@
       <div id="daftarKliping" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
     </section>
 
-    <!-- 04. Tautan Langsung Kanal Media Sosial Resmi (TikTok, IG, FB, YouTube) -->
+    <!-- 04. Kanal Resmi -->
     <section id="kanal" class="space-y-6">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-slate-200 pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-sky-700">04 &mdash; Kanal Resmi Media Sosial</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Akses Langsung Media Sosial Rampai Nusantara</h2>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Media Sosial</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Kanal Resmi Rampai Nusantara</h2>
           <p class="text-sm text-slate-600 mt-1">
-            Klik kartu di bawah untuk langsung membuka akun dan tayangan resmi di TikTok, Instagram, Facebook, dan YouTube.
+            Akses langsung akun dan publikasi resmi di TikTok, Instagram, Facebook, dan YouTube.
           </p>
         </div>
         <span class="text-xs font-semibold text-slate-500">@rampainusantara_official</span>
       </div>
 
-      <div id="gridKanalSosmed" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Diisi otomatis dari KANAL_SOSMED_RN -->
-      </div>
+      <div id="gridKanalSosmed" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
     </section>
 
-    <!-- 05. Alamat Sekretariat & Form Koordinasi WhatsApp -->
-    <section id="sekretariat" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+    <!-- 05. Sekretariat & Koordinasi WA -->
+    <section id="sekretariat" class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8">
       <div class="grid lg:grid-cols-12 gap-8">
         <div class="lg:col-span-5 space-y-4">
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-sky-700">05 &mdash; Sekretariat</span>
-            <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Alamat Kantor &amp; Koordinasi</h2>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Sekretariat</span>
+            <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Alamat &amp; Koordinasi</h2>
           </div>
 
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
-            <div class="text-xs font-bold uppercase tracking-wider text-sky-700">Alamat Sekretariat Resmi</div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-700">Alamat Sekretariat Resmi</div>
             <p class="text-sm font-semibold text-slate-900 leading-relaxed">
               Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420
             </p>
@@ -425,9 +408,9 @@
                 href="https://www.google.com/maps/search/?api=1&query=Jl.+Nusa+Indah+Raya+No.+15+Blok+I,+Cipinang+Muara,+Jatinegara,+Jakarta+13420"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="font-semibold text-sky-700 hover:text-sky-800"
+                class="font-semibold text-emerald-700 hover:text-emerald-800"
               >
-                Lihat di Google Maps &rarr;
+                Google Maps &rarr;
               </a>
               <button
                 type="button"
@@ -440,7 +423,7 @@
           </div>
 
           <p class="text-sm text-slate-600 leading-relaxed">
-            Bergabung menjadi anggota, ajukan undangan kegiatan, atau kirimkan pesan koordinasi langsung ke WhatsApp Sekretariat.
+            Kirimkan pesan koordinasi, pendaftaran anggota, atau undangan kegiatan langsung ke WhatsApp Sekretariat.
           </p>
         </div>
 
@@ -448,11 +431,11 @@
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label for="namaPengirim" class="block text-xs font-semibold text-slate-700 mb-1">Nama Pengirim</label>
-              <input id="namaPengirim" type="text" required placeholder="Nama lengkap / asal daerah" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-600" />
+              <input id="namaPengirim" type="text" required placeholder="Nama lengkap / asal daerah" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-emerald-600" />
             </div>
             <div>
               <label for="keperluan" class="block text-xs font-semibold text-slate-700 mb-1">Keperluan</label>
-              <select id="keperluan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:border-sky-600">
+              <select id="keperluan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:border-emerald-600">
                 <option value="Gabung Jadi Anggota">Gabung Jadi Anggota</option>
                 <option value="Koordinasi Organisasi / Daerah">Koordinasi Organisasi / Daerah</option>
                 <option value="Undangan &amp; Agenda Kegiatan">Undangan &amp; Agenda Kegiatan</option>
@@ -462,11 +445,11 @@
 
           <div>
             <label for="pesanWA" class="block text-xs font-semibold text-slate-700 mb-1">Isi Pesan / Detail Koordinasi</label>
-            <textarea id="pesanWA" rows="3" required placeholder="Tuliskan domisili, nomor/info singkat, atau detail koordinasi..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-600"></textarea>
+            <textarea id="pesanWA" rows="3" required placeholder="Tuliskan domisili, info singkat, atau detail koordinasi..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-emerald-600"></textarea>
           </div>
 
           <button type="submit" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold transition">
-            Kirim Format ke WhatsApp Sekretariat
+            Kirim ke WhatsApp Sekretariat
           </button>
         </form>
       </div>
@@ -477,7 +460,7 @@
     id="btnWaFloating"
     href="#sekretariat"
     aria-label="Hubungi WhatsApp Sekretariat Rampai Nusantara"
-    class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-lg border-2 border-white transition"
+    class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold border-2 border-white transition"
   >
     <span>WhatsApp Sekretariat</span>
   </a>
@@ -492,10 +475,10 @@
       <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-100 text-xs text-slate-500">
         <div>Arsip Publik &amp; Kliping Media</div>
         <div class="flex flex-wrap items-center gap-4 font-medium">
-          <a href="https://www.tiktok.com/@rampainusantara_official" target="_blank" rel="noopener noreferrer" class="hover:text-rose-600">TikTok</a>
-          <a href="https://www.instagram.com/rampainusantara_official/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-600">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61595219347834&sk=photos" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700">Facebook</a>
-          <a href="https://www.youtube.com/@Rampai_Nusantara" target="_blank" rel="noopener noreferrer" class="hover:text-red-600">YouTube</a>
+          <a href="https://www.tiktok.com/@rampainusantara_official" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">TikTok</a>
+          <a href="https://www.instagram.com/rampainusantara_official/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61595219347834&sk=photos" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">Facebook</a>
+          <a href="https://www.youtube.com/@Rampai_Nusantara" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">YouTube</a>
         </div>
       </div>
     </div>
@@ -506,63 +489,42 @@
     const ALAMAT_SEKRETARIAT = "Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420";
 
     const LOGO_PLATFORM_SVG = {
-      TikTok: `
-        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-        </svg>
-      `,
-      Instagram: `
-        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-        </svg>
-      `,
-      Facebook: `
-        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true">
-          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-        </svg>
-      `,
-      YouTube: `
-        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true">
-          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-        </svg>
-      `
+      TikTok: `<svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>`,
+      Instagram: `<svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>`,
+      Facebook: `<svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>`,
+      YouTube: `<svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>`
     };
 
     const KANAL_SOSMED_RN = [
       {
         platform: "TikTok",
         handle: "@rampainusantara_official",
-        deskripsi: "Video singkat kegiatan, pernyataan sikap, dan dokumentasi lapangan Rampai Nusantara.",
+        deskripsi: "Video singkat kegiatan, pernyataan sikap, dan dokumentasi lapangan.",
         meta: "111.1K Pengikut • 4.3M Suka",
-        borderTop: "border-t-rose-600",
         iconBox: "bg-slate-900 text-white",
-        badge: "bg-rose-50 text-rose-700 border-rose-200",
-        tombol: "bg-rose-600 hover:bg-rose-700 text-white",
+        badge: "bg-slate-100 text-slate-800 border-slate-200",
+        tombol: "bg-slate-900 hover:bg-slate-800 text-white",
         labelTombol: "Buka TikTok",
         url: "https://www.tiktok.com/@rampainusantara_official"
       },
       {
         platform: "Instagram",
         handle: "@rampainusantara_official",
-        deskripsi: "Dokumentasi visual, publikasi kegiatan wilayah, dan informasi agenda organisasi.",
+        deskripsi: "Dokumentasi visual, publikasi kegiatan wilayah, dan agenda organisasi.",
         meta: "27,9 rb Pengikut • 2.553 Kiriman",
-        borderTop: "border-t-pink-500",
-        iconBox: "bg-pink-600 text-white",
-        badge: "bg-pink-50 text-pink-700 border-pink-200",
-        tombol: "bg-pink-600 hover:bg-pink-700 text-white",
+        iconBox: "bg-emerald-600 text-white",
+        badge: "bg-emerald-50 text-emerald-800 border-emerald-200",
+        tombol: "bg-emerald-600 hover:bg-emerald-700 text-white",
         labelTombol: "Buka Instagram",
         url: "https://www.instagram.com/rampainusantara_official/"
       },
       {
         platform: "Facebook",
         handle: "Rampai Nusantara Official",
-        deskripsi: "Galeri foto kegiatan, pembaruan informasi komunitas, dan dokumentasi lintas daerah.",
+        deskripsi: "Galeri foto kegiatan, informasi komunitas, dan dokumentasi daerah.",
         meta: "Halaman & Galeri Resmi",
-        borderTop: "border-t-sky-600",
         iconBox: "bg-sky-600 text-white",
-        badge: "bg-sky-50 text-sky-700 border-sky-200",
+        badge: "bg-sky-50 text-sky-800 border-sky-200",
         tombol: "bg-sky-600 hover:bg-sky-700 text-white",
         labelTombol: "Buka Facebook",
         url: "https://www.facebook.com/profile.php?id=61595219347834&sk=photos"
@@ -570,11 +532,10 @@
       {
         platform: "YouTube",
         handle: "@Rampai_Nusantara",
-        deskripsi: "Tayangan konferensi pers, liputan khusus, dan siaran pernyataan sikap resmi.",
+        deskripsi: "Tayangan konferensi pers, liputan khusus, dan siaran pernyataan sikap.",
         meta: "Kanal Video Resmi",
-        borderTop: "border-t-red-600",
         iconBox: "bg-red-600 text-white",
-        badge: "bg-red-50 text-red-700 border-red-200",
+        badge: "bg-red-50 text-red-800 border-red-200",
         tombol: "bg-red-600 hover:bg-red-700 text-white",
         labelTombol: "Buka YouTube",
         url: "https://www.youtube.com/@Rampai_Nusantara"
@@ -586,7 +547,7 @@
         media: "Tribun Rakyat",
         badge: "bg-amber-50 text-amber-800 border-amber-200",
         judul: "Rampai Nusantara Lahir untuk Memperjuangkan Kepentingan Seluruh Masyarakat Indonesia",
-        ringkas: "Catatan awal kelahiran dan komitmen perjuangan Rampai Nusantara bagi kepentingan masyarakat luas.",
+        ringkas: "Catatan awal kelahiran dan komitmen perjuangan Rampai Nusantara bagi masyarakat luas.",
         ts: new Date("2022-03-28").getTime(),
         waktuLabel: "28 Mar 2022",
         link: "https://tribunrakyat.com/22303/28/03/2022/rampai-nusantara-lahir-untuk-memperjuangkan-kepentingan-seluruh-masyarakat-indonesia.html"
@@ -595,7 +556,7 @@
         media: "Republika",
         badge: "bg-emerald-50 text-emerald-800 border-emerald-200",
         judul: "Rampai Nusantara Sumatra Utara Resmi Dideklarasikan",
-        ringkas: "Deklarasi dan pelantikan pengurus wilayah Sumut, saat Rampai Nusantara telah hadir di 12 provinsi.",
+        ringkas: "Deklarasi dan pelantikan pengurus wilayah Sumut, saat Rampai Nusantara hadir di 12 provinsi.",
         ts: new Date("2022-08-08").getTime(),
         waktuLabel: "8 Agu 2022",
         link: "https://www.google.com/search?q=%22Rampai+Nusantara+Sumatra+Utara+Resmi+Dideklarasikan%22+Republika"
@@ -701,100 +662,30 @@
       }
     ];
 
-    /* Menghapus latar putih sudut luar logo agar tidak kotak di layar gelap / HP */
-    function bersihkanSudutLogo(imgEl) {
-      if (!imgEl || imgEl.dataset.cleaned) return;
-      try {
-        const canvas = document.createElement("canvas");
-        const w = imgEl.naturalWidth || 256;
-        const h = imgEl.naturalHeight || 256;
-        canvas.width = w;
-        canvas.height = h;
-        const ctx = canvas.getContext("2d", { willReadFrequently: true });
-        ctx.drawImage(imgEl, 0, 0, w, h);
-
-        const imageData = ctx.getImageData(0, 0, w, h);
-        const data = imageData.data;
-
-        // Flood-fill dari tepi luar untuk menghapus latar putih/terang di luar logo
-        const visited = new Uint8Array(w * h);
-        const queue = [];
-
-        const isOuterWhite = (idx) => {
-          const r = data[idx];
-          const g = data[idx + 1];
-          const b = data[idx + 2];
-          const a = data[idx + 3];
-          return a > 10 && r > 232 && g > 232 && b > 232;
-        };
-
-        for (let x = 0; x < w; x++) {
-          queue.push(x);
-          queue.push((h - 1) * w + x);
-        }
-        for (let y = 0; y < h; y++) {
-          queue.push(y * w);
-          queue.push(y * w + (w - 1));
-        }
-
-        let head = 0;
-        while (head < queue.length) {
-          const pos = queue[head++];
-          if (pos < 0 || pos >= w * h || visited[pos]) continue;
-          visited[pos] = 1;
-          const pIdx = pos * 4;
-          if (!isOuterWhite(pIdx)) continue;
-
-          data[pIdx + 3] = 0;
-
-          const x = pos % w;
-          const y = (pos - x) / w;
-          if (x > 0) queue.push(pos - 1);
-          if (x < w - 1) queue.push(pos + 1);
-          if (y > 0) queue.push(pos - w);
-          if (y < h - 1) queue.push(pos + w);
-        }
-
-        ctx.putImageData(imageData, 0, 0);
-        imgEl.dataset.cleaned = "1";
-        imgEl.src = canvas.toDataURL("image/png");
-      } catch (_) {
-        // Aman diabaikan jika dibuka pada mode file:// yang membatasi canvas
-      }
-    }
-
-    document.querySelectorAll('img[data-rn-logo]').forEach((img) => {
-      if (img.complete && img.naturalWidth > 0) {
-        bersihkanSudutLogo(img);
-      } else {
-        img.addEventListener("load", () => bersihkanSudutLogo(img), { once: true });
-      }
-    });
-
     function renderKanalSosmed() {
       const container = document.getElementById("gridKanalSosmed");
       container.innerHTML = KANAL_SOSMED_RN.map(item => `
-        <article class="bg-white rounded-2xl border border-slate-200 border-t-4 ${item.borderTop} p-5 flex flex-col justify-between gap-4 shadow-sm hover:border-sky-300 transition">
+        <article class="bg-white rounded-2xl border border-slate-200/90 p-5 flex flex-col justify-between gap-4 hover:border-slate-300 transition">
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border ${item.badge}">${item.platform}</span>
-              <div class="w-9 h-9 rounded-full ${item.iconBox} flex items-center justify-center shrink-0 shadow-xs">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold border ${item.badge}">${item.platform}</span>
+              <div class="w-8 h-8 rounded-lg ${item.iconBox} flex items-center justify-center shrink-0">
                 ${LOGO_PLATFORM_SVG[item.platform] || ""}
               </div>
             </div>
             <div>
               <h3 class="font-bold text-slate-900 text-base">${item.platform}</h3>
-              <p class="text-xs font-semibold text-slate-500">${item.handle}</p>
+              <p class="text-xs font-medium text-slate-500">${item.handle}</p>
             </div>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.deskripsi}</p>
           </div>
-          <div class="space-y-3 pt-2 border-t border-slate-100">
+          <div class="space-y-3 pt-3 border-t border-slate-100">
             <div class="text-[11px] font-medium text-slate-500">${item.meta}</div>
             <a
               href="${item.url}"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition ${item.tombol}"
+              class="w-full inline-flex items-center justify-center px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition ${item.tombol}"
             >
               ${item.labelTombol} &rarr;
             </a>
@@ -812,8 +703,8 @@
       container.innerHTML = portals.map(portal => {
         const aktif = portal === portalAktif;
         const cls = aktif
-          ? "bg-sky-600 text-white border-sky-600"
-          : "bg-white text-slate-700 border-slate-200 hover:border-sky-300";
+          ? "bg-slate-900 text-white border-slate-900"
+          : "bg-white text-slate-700 border-slate-200 hover:border-slate-300";
         return `<button type="button" data-portal="${portal}" class="portal-btn px-3.5 py-1.5 rounded-full border text-xs font-semibold transition ${cls}">${portal}</button>`;
       }).join("");
 
@@ -842,7 +733,7 @@
       }
 
       container.innerHTML = items.map(item => `
-        <article class="bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between gap-4 shadow-sm hover:border-sky-300 transition">
+        <article class="bg-white rounded-2xl border border-slate-200/90 p-5 flex flex-col justify-between gap-4 hover:border-slate-300 transition">
           <div class="space-y-2.5">
             <div class="flex items-center justify-between gap-2">
               <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold border ${item.badge}">${item.media}</span>
@@ -852,7 +743,7 @@
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.ringkas}</p>
           </div>
           <div>
-            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-sky-700 hover:text-sky-800">
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-slate-900 hover:text-emerald-700 transition">
               Buka Sumber Berita &rarr;
             </a>
           </div>
