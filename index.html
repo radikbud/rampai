@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" class="scroll-smooth" style="color-scheme: light;">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light" />
+  <meta name="theme-color" content="#0284C7" />
   <title>Rampai Nusantara — Satu Frekuensi, Peduli Negeri</title>
   <link rel="icon" type="image/png" href="logo-rn.png" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -10,14 +13,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #F8FAFC;
-      color: #0F172A;
+    :root {
+      color-scheme: light only;
+    }
+    html, body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #F8FAFC !important;
+      color: #0F172A !important;
+      color-scheme: light only;
+      -webkit-text-size-adjust: 100%;
     }
     .rn-stripe {
       height: 4px;
       background: linear-gradient(90deg, #EAB308 0%, #16A34A 33%, #0EA5E9 66%, #DC2626 100%);
+    }
+    /* Alas putih mengikuti lengkungan logo tanpa sudut kotak tajam */
+    .rn-logo-contour {
+      background: radial-gradient(circle at 52% 48%, #FFFFFF 64%, rgba(255, 255, 255, 0.92) 76%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 58% 42% 52% 48% / 50% 56% 44% 50%;
     }
   </style>
 </head>
@@ -27,18 +40,20 @@
   <!-- Header Navigasi dengan Logo RN -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-      <a href="#" class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-white overflow-hidden flex items-center justify-center shrink-0">
+      <a href="#" class="flex items-center gap-3 min-w-0">
+        <div class="w-11 h-11 rn-logo-contour overflow-hidden flex items-center justify-center p-1 shrink-0">
           <img
             src="logo-rn.png"
             alt="Logo Rampai Nusantara"
-            onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=128';"
+            loading="eager"
+            decoding="async"
+            data-rn-logo="header"
             class="w-full h-full object-contain object-center"
           />
         </div>
-        <div class="leading-tight">
-          <div class="font-bold text-slate-900 text-sm sm:text-base">Rampai Nusantara</div>
-          <div class="text-[11px] text-slate-500">Dewan Eksekutif Nasional</div>
+        <div class="leading-tight truncate">
+          <div class="font-bold text-slate-900 text-sm sm:text-base truncate">Rampai Nusantara</div>
+          <div class="text-[11px] text-slate-500 truncate">Dewan Eksekutif Nasional</div>
         </div>
       </a>
 
@@ -50,7 +65,7 @@
         <a href="#sekretariat" class="hover:text-sky-700 transition">05. Sekretariat</a>
       </nav>
 
-      <a href="#sekretariat" class="inline-flex items-center px-3.5 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-semibold transition">
+      <a href="#sekretariat" class="inline-flex items-center px-3.5 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-semibold transition shrink-0">
         Hubungi WA
       </a>
     </div>
@@ -93,7 +108,9 @@
             <img
               src="ketum-sekjen-rn.jpeg"
               alt="Ketua Umum Mardiansyah Semar dan Sekretaris Jenderal Satria Chaniago Rampai Nusantara"
-              onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Rampai+Nusantara&background=0284c7&color=ffffff&size=512';"
+              loading="eager"
+              decoding="async"
+              onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22600%22 height=%22360%22 viewBox=%220 0 600 360%22%3E%3Crect width=%22600%22 height=%22360%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%230284c7%22 font-family=%22sans-serif%22 font-size=%2224%22 font-weight=%22bold%22%3ERampai Nusantara%3C/text%3E%3C/svg%3E';"
               class="w-full h-64 sm:h-80 object-contain object-center bg-white"
             />
             <div class="px-5 py-4 border-t border-slate-200 space-y-3 bg-slate-50/40">
@@ -195,13 +212,15 @@
             </div>
           </div>
 
-          <!-- Logo Asli Rampai Nusantara (Tanpa Lingkaran Tambahan) -->
+          <!-- Logo Asli Rampai Nusantara Mengikuti Lengkungan (Tanpa Kotak) -->
           <div class="flex flex-col items-center justify-center py-3">
-            <div class="w-44 h-44 sm:w-48 sm:h-48 bg-white flex items-center justify-center transition-transform duration-300 hover:scale-[1.02]">
+            <div class="w-44 h-44 sm:w-52 sm:h-52 rn-logo-contour flex items-center justify-center p-2 transition-transform duration-300 hover:scale-[1.02]">
               <img
                 src="logo-rn.png"
                 alt="Logo Resmi Rampai Nusantara"
-                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=ffffff&color=16a34a&size=256';"
+                loading="eager"
+                decoding="async"
+                data-rn-logo="showcase"
                 class="w-full h-full object-contain object-center"
               />
             </div>
@@ -244,6 +263,7 @@
                 class="w-full h-full"
                 src="https://www.youtube.com/embed/qc3p2kdtI6I?si=ildJclRNGqw7A_5I"
                 title="YouTube video player"
+                loading="lazy"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -680,6 +700,76 @@
         link: "http://www.youtube.com/watch?v=yAFGtJFcKkc"
       }
     ];
+
+    /* Menghapus latar putih sudut luar logo agar tidak kotak di layar gelap / HP */
+    function bersihkanSudutLogo(imgEl) {
+      if (!imgEl || imgEl.dataset.cleaned) return;
+      try {
+        const canvas = document.createElement("canvas");
+        const w = imgEl.naturalWidth || 256;
+        const h = imgEl.naturalHeight || 256;
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext("2d", { willReadFrequently: true });
+        ctx.drawImage(imgEl, 0, 0, w, h);
+
+        const imageData = ctx.getImageData(0, 0, w, h);
+        const data = imageData.data;
+
+        // Flood-fill dari tepi luar untuk menghapus latar putih/terang di luar logo
+        const visited = new Uint8Array(w * h);
+        const queue = [];
+
+        const isOuterWhite = (idx) => {
+          const r = data[idx];
+          const g = data[idx + 1];
+          const b = data[idx + 2];
+          const a = data[idx + 3];
+          return a > 10 && r > 232 && g > 232 && b > 232;
+        };
+
+        for (let x = 0; x < w; x++) {
+          queue.push(x);
+          queue.push((h - 1) * w + x);
+        }
+        for (let y = 0; y < h; y++) {
+          queue.push(y * w);
+          queue.push(y * w + (w - 1));
+        }
+
+        let head = 0;
+        while (head < queue.length) {
+          const pos = queue[head++];
+          if (pos < 0 || pos >= w * h || visited[pos]) continue;
+          visited[pos] = 1;
+          const pIdx = pos * 4;
+          if (!isOuterWhite(pIdx)) continue;
+
+          data[pIdx + 3] = 0;
+
+          const x = pos % w;
+          const y = (pos - x) / w;
+          if (x > 0) queue.push(pos - 1);
+          if (x < w - 1) queue.push(pos + 1);
+          if (y > 0) queue.push(pos - w);
+          if (y < h - 1) queue.push(pos + w);
+        }
+
+        ctx.putImageData(imageData, 0, 0);
+        imgEl.dataset.cleaned = "1";
+        imgEl.src = canvas.toDataURL("image/png");
+      } catch (_) {
+        // Aman diabaikan jika dibuka pada mode file:// yang membatasi canvas
+      }
+    }
+
+    document.querySelectorAll('img[data-rn-logo]').forEach((img) => {
+      if (img.complete && img.naturalWidth > 0) {
+        bersihkanSudutLogo(img);
+      } else {
+        img.addEventListener("load", () => bersihkanSudutLogo(img), { once: true });
+      }
+    });
 
     function renderKanalSosmed() {
       const container = document.getElementById("gridKanalSosmed");
