@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rampai Nusantara — Arsip Gerakan &amp; Kliping Media</title>
+  <link rel="icon" type="image/png" href="logo-rn.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+    .rn-stripe {
+      height: 4px;
+      background: linear-gradient(90deg, #EAB308 0%, #16A34A 33%, #0EA5E9 66%, #DC2626 100%);
+    }
+    .rn-logo-ring {
+      background: conic-gradient(from 180deg, #EAB308, #DC2626, #0EA5E9, #16A34A, #EAB308);
+      padding: 2px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-100 selection:text-sky-900">
+  <!-- Aksen Garis Warna Logo RN -->
+  <div class="rn-stripe w-full"></div>
+
+  <!-- Header Navigasi dengan Logo RN -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full rn-logo-ring shrink-0 shadow-xs">
+          <div class="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
+            <img
+              src="logo-rn.png"
+              alt="Logo Rampai Nusantara"
+              onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=128';"
+              class="w-full h-full object-cover object-center scale-110"
+            />
+          </div>
+        </div>
+        <div class="leading-tight">
+          <div class="font-bold text-slate-900 text-sm sm:text-base">Rampai Nusantara</div>
+          <div class="text-[11px] text-slate-500">Dewan Eksekutif Nasional</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#profil" class="hover:text-sky-700 transition">01. Profil &amp; Pimpinan</a>
+        <a href="#kliping" class="hover:text-sky-700 transition">02. Kliping Media</a>
+        <a href="#kanal" class="hover:text-sky-700 transition">03. Feed &amp; Media Sosial</a>
+        <a href="#sekretariat" class="hover:text-sky-700 transition">04. Sekretariat</a>
+      </nav>
+
+      <a href="#sekretariat" class="inline-flex items-center px-3.5 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-semibold transition">
+        Hubungi WA
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-16">
+    <!-- 01. Hero & Foto Pimpinan -->
+    <section id="profil" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-50 text-sky-800 text-xs font-semibold border border-sky-100">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+            <span class="w-2 h-2 rounded-full bg-red-600"></span>
+            01 &mdash; Rumah Gerakan &amp; Dokumentasi Publik
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Rampai Nusantara: Merawat Jejak Gerakan &amp; Aspirasi Kebangsaan
+          </h1>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Portal informasi dan arsip publik <strong>Dewan Eksekutif Nasional Rampai Nusantara</strong> yang menghimpun rekam jejak pernyataan sikap, kegiatan organisasi, serta kliping pemberitaan lintas media nasional dari masa ke masa.
+          </p>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="#kliping" class="px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-sm font-semibold transition">
+              Jelajahi Kliping Berita
+            </a>
+            <a href="#kanal" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold transition">
+              Lihat Feed Media Sosial
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Hero Ketum & Sekjen RN Menyatu di Bawah Foto -->
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm">
+            <img
+              src="ketum-sekjen-rn.jpeg"
+              alt="Ketua Umum Mardiansyah Semar dan Sekretaris Jenderal Satria Chaniago Rampai Nusantara"
+              onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Rampai+Nusantara&background=0284c7&color=ffffff&size=512';"
+              class="w-full h-64 sm:h-80 object-contain object-center bg-white"
+            />
+            <div class="px-5 py-4 border-t border-slate-200 space-y-3 bg-slate-50/40">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="border-l-2 border-amber-400 pl-2.5">
+                  <div class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Ketua Umum</div>
+                  <div class="font-bold text-slate-900 text-sm">Mardiansyah Semar</div>
+                </div>
+                <div class="border-l-2 border-sky-600 pl-2.5">
+                  <div class="text-[11px] font-bold uppercase tracking-wider text-sky-700">Sekretaris Jenderal</div>
+                  <div class="font-bold text-slate-900 text-sm">Satria Chaniago</div>
+                </div>
+              </div>
+              <div class="text-xs text-slate-500 pt-2 border-t border-slate-100">
+                Dewan Eksekutif Nasional Rampai Nusantara
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. Kliping Pemberitaan Media Nasional -->
+    <section id="kliping" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-700">02 &mdash; Arsip Pemberitaan</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Kliping Berita Rampai Nusantara</h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Menampilkan arsip kurasi berita dari masa awal hingga terbaru, dilengkapi filter portal dan tombol urut waktu.
+          </p>
+        </div>
+
+        <button
+          id="btnSortWaktu"
+          type="button"
+          class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-sky-50 text-sky-700 border border-sky-200 text-sm font-semibold shadow-sm transition shrink-0"
+        >
+          <span id="sortLabel">Urutan: Lama &rarr; Terbaru</span>
+        </button>
+      </div>
+
+      <!-- Filter Portal Media -->
+      <div id="filterPortal" class="flex flex-wrap gap-2"></div>
+
+      <!-- Grid Daftar Kliping -->
+      <div id="daftarKliping" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </section>
+
+    <!-- 03. Feed & Widget Media Sosial (9 Postingan per Platform) -->
+    <section id="kanal" class="space-y-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">03 &mdash; Feed &amp; Widget Media Sosial</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">9 Postingan Terbaru per Platform Rampai Nusantara</h2>
+        <p class="text-sm text-slate-600 mt-1">
+          Menampilkan 9 postingan/tayangan terbaru pada masing-masing kanal resmi YouTube, TikTok, Instagram, dan Facebook.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-6 items-start">
+        <!-- Kolom Kiri: YouTube RSS Auto-Feed (9 Video) + Facebook Timeline (9 Postingan) -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Widget YouTube RSS Auto-Feed (9 Item) -->
+          <div class="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-emerald-500 p-5 shadow-sm space-y-4">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-600">YouTube RSS Auto-Feed &bull; 9 Video</div>
+                <div class="font-extrabold text-slate-900 text-lg leading-snug mt-0.5">@rampainusantara_official</div>
+              </div>
+              <a
+                href="https://www.youtube.com/@Rampai_Nusantara"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs font-bold text-emerald-700 hover:text-emerald-800 shrink-0"
+              >
+                Buka Kanal &rarr;
+              </a>
+            </div>
+
+            <div id="ytRssList" class="space-y-2 max-h-[380px] overflow-y-auto pr-1"></div>
+
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-200/80 text-xs text-amber-900 leading-relaxed">
+              Isi <code class="px-1 py-0.5 rounded bg-white text-rose-600 font-semibold">youtubeChannelId: "UC..."</code> pada <strong class="text-blue-700">KONFIG</strong> agar feed RSS 9 video ter-update otomatis setiap upload baru.
+            </div>
+          </div>
+
+          <!-- Widget Facebook Timeline (9 Postingan) -->
+          <div class="bg-white rounded-2xl border border-slate-200 border-t-4 border-t-sky-500 p-5 shadow-sm space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-sky-600">Facebook Timeline &bull; 9 Postingan</div>
+                <div class="font-extrabold text-slate-900 text-lg leading-snug mt-0.5">Rampai Nusantara Official</div>
+              </div>
+              <a
+                href="https://www.facebook.com/profile.php?id=61595219347834&sk=photos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-700 text-xs font-bold border border-sky-100 hover:bg-sky-100 transition"
+              >
+                Galeri FB &rarr;
+              </a>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+              <div class="w-11 h-11 rounded-full bg-white border border-slate-200 overflow-hidden shrink-0">
+                <img
+                  src="logo-rn.png"
+                  alt="Logo RN"
+                  onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=96';"
+                  class="w-full h-full object-cover object-center scale-110"
+                />
+              </div>
+              <div class="text-xs leading-snug">
+                <div class="font-bold text-slate-900">Rampai Nusantara Official</div>
+                <div class="text-slate-500">FOLLOW! Untuk Video Terbaru &bull; LIKE &amp; KOMEN SEMUA VIDEONYA!</div>
+              </div>
+            </div>
+
+            <div id="fbPostGrid" class="grid grid-cols-3 gap-2"></div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Social Feed Box TikTok (9 Postingan) & Instagram (9 Postingan) -->
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Social Feed Box</div>
+              <h3 class="font-extrabold text-slate-900 text-lg sm:text-xl">TikTok &amp; Instagram Official (9 Postingan / Platform)</h3>
+            </div>
+            <span class="text-xs font-medium text-slate-400">@rampainusantara_official</span>
+          </div>
+
+          <!-- Blok TikTok (9 Postingan) -->
+          <div class="rounded-xl border border-slate-200 p-4 space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-rose-600">
+                TikTok &bull; 9 Postingan Terbaru
+              </div>
+              <a
+                href="https://www.tiktok.com/@rampainusantara_official"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold transition"
+              >
+                Buka TikTok
+              </a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-full border border-slate-200 bg-white overflow-hidden shrink-0">
+                <img
+                  src="logo-rn.png"
+                  alt="Logo RN TikTok"
+                  onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=96';"
+                  class="w-full h-full object-cover object-center scale-110"
+                />
+              </div>
+              <div class="space-y-1">
+                <div class="font-bold text-slate-900 text-sm sm:text-base">rampainusantara_official</div>
+                <div class="flex flex-wrap items-center gap-4 text-xs">
+                  <div><span class="font-extrabold text-slate-900">7</span> <span class="text-slate-500">Mengikuti</span></div>
+                  <div><span class="font-extrabold text-slate-900">111.1K</span> <span class="text-slate-500">Pengikut</span></div>
+                  <div><span class="font-extrabold text-slate-900">4.3M</span> <span class="text-slate-500">Suka</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grid 9 Postingan TikTok -->
+            <div id="tiktokPostGrid" class="grid grid-cols-3 gap-2.5"></div>
+          </div>
+
+          <!-- Blok Instagram (9 Postingan) -->
+          <div class="rounded-xl border border-slate-200 p-4 space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="text-[11px] font-bold uppercase tracking-wider text-amber-600">
+                Instagram &bull; 9 Postingan Terbaru
+              </div>
+              <a
+                href="https://www.instagram.com/rampainusantara_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-3 py-1 rounded-lg bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white text-xs font-bold"
+              >
+                Buka IG
+              </a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-full border-2 border-pink-500 bg-white overflow-hidden shrink-0">
+                <img
+                  src="logo-rn.png"
+                  alt="Logo RN Instagram"
+                  onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=RN&background=0284c7&color=ffffff&size=96';"
+                  class="w-full h-full object-cover object-center scale-110"
+                />
+              </div>
+              <div class="leading-snug">
+                <div class="font-bold text-slate-900 text-sm">rampainusantara_official</div>
+                <div class="text-xs font-semibold text-slate-700 uppercase">RAMPAI NUSANTARA</div>
+                <div class="text-xs text-slate-500 mt-0.5">27,9 rb pengikut &bull; 2.553 kiriman</div>
+              </div>
+            </div>
+
+            <!-- Grid 9 Postingan Instagram -->
+            <div id="igPostGrid" class="grid grid-cols-3 gap-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Alamat Sekretariat & Form Koordinasi WhatsApp -->
+    <section id="sekretariat" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+      <div class="grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-5 space-y-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-700">04 &mdash; Sekretariat</span>
+            <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Alamat Kantor &amp; Koordinasi</h2>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-sky-700">Alamat Sekretariat Resmi</div>
+            <p class="text-sm font-semibold text-slate-900 leading-relaxed">
+              Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420
+            </p>
+            <div class="pt-1 flex flex-wrap items-center gap-3 text-xs">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Jl.+Nusa+Indah+Raya+No.+15+Blok+I,+Cipinang+Muara,+Jatinegara,+Jakarta+13420"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-semibold text-sky-700 hover:text-sky-800"
+              >
+                Lihat di Google Maps &rarr;
+              </a>
+              <button
+                type="button"
+                id="btnSalinAlamat"
+                class="font-semibold text-slate-600 hover:text-slate-900 underline underline-offset-2"
+              >
+                Salin Alamat
+              </button>
+            </div>
+          </div>
+
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Kirimkan tautan pemberitaan Rampai Nusantara dari daerah maupun pusat, undangan kegiatan, atau pesan koordinasi langsung ke WhatsApp Sekretariat.
+          </p>
+        </div>
+
+        <form id="formWA" class="lg:col-span-7 space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="namaPengirim" class="block text-xs font-semibold text-slate-700 mb-1">Nama Pengirim</label>
+              <input id="namaPengirim" type="text" required placeholder="Nama lengkap / asal daerah" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-600" />
+            </div>
+            <div>
+              <label for="keperluan" class="block text-xs font-semibold text-slate-700 mb-1">Keperluan</label>
+              <select id="keperluan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:border-sky-600">
+                <option value="Setoran Link Kliping Berita">Setoran Link Kliping Berita</option>
+                <option value="Koordinasi Organisasi / Daerah">Koordinasi Organisasi / Daerah</option>
+                <option value="Undangan &amp; Agenda Kegiatan">Undangan &amp; Agenda Kegiatan</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="pesanWA" class="block text-xs font-semibold text-slate-700 mb-1">Isi Pesan / Tautan Berita</label>
+            <textarea id="pesanWA" rows="3" required placeholder="Tempelkan link berita atau tuliskan detail koordinasi..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-sky-600"></textarea>
+          </div>
+
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold transition">
+            Kirim Format ke WhatsApp Sekretariat
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a
+    id="btnWaFloating"
+    href="#sekretariat"
+    aria-label="Hubungi WhatsApp Sekretariat Rampai Nusantara"
+    class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-lg border-2 border-white transition"
+  >
+    <span>WhatsApp Sekretariat</span>
+  </a>
+
+  <footer class="border-t border-slate-200 bg-white mt-14">
+    <div class="rn-stripe w-full"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
+        <div class="font-semibold text-slate-800">Rampai Nusantara &mdash; Dewan Eksekutif Nasional</div>
+        <div>Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420</div>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-100 text-xs text-slate-500">
+        <div>Arsip Publik &amp; Kliping Media</div>
+        <div class="flex flex-wrap items-center gap-4 font-medium">
+          <a href="https://www.instagram.com/rampainusantara_official/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-600">Instagram</a>
+          <a href="https://www.tiktok.com/@rampainusantara_official" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900">TikTok</a>
+          <a href="https://www.facebook.com/profile.php?id=61595219347834&sk=photos" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700">Facebook</a>
+          <a href="https://www.youtube.com/@Rampai_Nusantara" target="_blank" rel="noopener noreferrer" class="hover:text-red-600">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const NOMOR_WA_SEKRETARIAT = "6281200000000";
+    const ALAMAT_SEKRETARIAT = "Jl. Nusa Indah Raya No. 15 Blok I, Cipinang Muara, Jatinegara, Jakarta 13420";
+
+    const KONFIG = {
+      youtubeChannelId: ""
+    };
+
+    const BERITA_ARSIP_RN = [
+      {
+        media: "Tribun Rakyat",
+        badge: "bg-amber-50 text-amber-800 border-amber-200",
+        judul: "Rampai Nusantara Lahir untuk Memperjuangkan Kepentingan Seluruh Masyarakat Indonesia",
+        ringkas: "Catatan awal kelahiran dan komitmen perjuangan Rampai Nusantara bagi kepentingan masyarakat luas.",
+        ts: new Date("2022-03-28").getTime(),
+        waktuLabel: "28 Mar 2022",
+        link: "https://tribunrakyat.com/22303/28/03/2022/rampai-nusantara-lahir-untuk-memperjuangkan-kepentingan-seluruh-masyarakat-indonesia.html"
+      },
+      {
+        media: "Republika",
+        badge: "bg-emerald-50 text-emerald-800 border-emerald-200",
+        judul: "Rampai Nusantara Sumatra Utara Resmi Dideklarasikan",
+        ringkas: "Deklarasi dan pelantikan pengurus wilayah Sumut, saat Rampai Nusantara telah hadir di 12 provinsi.",
+        ts: new Date("2022-08-08").getTime(),
+        waktuLabel: "8 Agu 2022",
+        link: "https://www.google.com/search?q=%22Rampai+Nusantara+Sumatra+Utara+Resmi+Dideklarasikan%22+Republika"
+      },
+      {
+        media: "Republika",
+        badge: "bg-emerald-50 text-emerald-800 border-emerald-200",
+        judul: "Rampai Nusantara Tegaskan Komitmen Kebangsaan",
+        ringkas: "Pelantikan pengurus wilayah NTT, provinsi ke-31 yang kepengurusannya terbentuk.",
+        ts: new Date("2023-01-24").getTime(),
+        waktuLabel: "24 Jan 2023",
+        link: "https://www.google.com/search?q=%22Rampai+Nusantara+Tegaskan+Komitmen+Kebangsaan%22+Republika"
+      },
+      {
+        media: "Republika",
+        badge: "bg-emerald-50 text-emerald-800 border-emerald-200",
+        judul: "Rampai Nusantara akan Gelar Rakernas",
+        ringkas: "Persiapan Rakernas ke-II yang digelar pada 26–27 Agustus 2024 di Ancol, Jakarta.",
+        ts: new Date("2024-08-23").getTime(),
+        waktuLabel: "23 Agu 2024",
+        link: "https://www.google.com/search?q=%22Rampai+Nusantara+akan+Gelar+Rakernas%22+Republika"
+      },
+      {
+        media: "Metro TV",
+        badge: "bg-sky-50 text-sky-800 border-sky-200",
+        judul: "Gelar Rakernas, Rampai Nusantara Bakal Beri Rekomendasi untuk Prabowo-Gibran",
+        ringkas: "Konferensi pers Dewan Eksekutif Nasional menjelang pelaksanaan Rakernas ke-II.",
+        ts: new Date("2024-08-25").getTime(),
+        waktuLabel: "Agu 2024",
+        link: "https://www.google.com/search?q=%22Gelar+Rakernas%2C+Rampai+Nusantara+Bakal+Beri+Rekomendasi+untuk+Prabowo-Gibran%22"
+      },
+      {
+        media: "Metro TV",
+        badge: "bg-sky-50 text-sky-800 border-sky-200",
+        judul: "Bantuan Bagi Korban Bencana Sumbar, Aceh, dan Sumut Terus Mengalir",
+        ringkas: "Bantuan dari Dewan Eksekutif Nasional dan pengurus wilayah RN untuk korban bencana.",
+        ts: new Date("2025-12-15").getTime(),
+        waktuLabel: "Des 2025",
+        link: "https://www.google.com/search?q=%22Bantuan+Bagi+Korban+Bencana+Sumbar%2C+Aceh%2C+dan+Sumut+Terus+Mengalir%22+Metro+TV"
+      },
+      {
+        media: "Sindonews",
+        badge: "bg-rose-50 text-rose-800 border-rose-200",
+        judul: "Ketum Rampai Nusantara: Kami Yakin Roy Suryo Akan Segera Ditahan",
+        ringkas: "Pernyataan sikap Ketua Umum Rampai Nusantara Mardiansyah Semar terkait proses hukum.",
+        ts: new Date("2026-06-11").getTime(),
+        waktuLabel: "11 Jun 2026",
+        link: "https://www.google.com/search?q=%22Ketum+Rampai+Nusantara%3A+Kami+Yakin+Roy+Suryo+Akan+Segera+Ditahan%22+Sindonews"
+      },
+      {
+        media: "Okezone",
+        badge: "bg-amber-50 text-amber-800 border-amber-200",
+        judul: "Polri Didorong Tuntaskan Pengusutan Tiga Kasus Dugaan Korupsi Besar",
+        ringkas: "Dorongan penegakan hukum dan pengusutan kasus korupsi besar oleh Rampai Nusantara.",
+        ts: new Date("2026-07-09").getTime(),
+        waktuLabel: "9 Jul 2026",
+        link: "https://www.google.com/search?q=%22Polri+Didorong+Tuntaskan+Pengusutan+Tiga+Kasus+Dugaan+Korupsi+Besar%22+Okezone"
+      },
+      {
+        media: "Okezone",
+        badge: "bg-amber-50 text-amber-800 border-amber-200",
+        judul: "Isu Provokatif Berpotensi Picu Kerusuhan, Masyarakat Diminta Tak Mudah Terpengaruh",
+        ringkas: "Imbauan Ketua Umum Mardiansyah Semar agar masyarakat menjaga kondusivitas.",
+        ts: new Date("2026-08-08").getTime(),
+        waktuLabel: "8 Agu 2026",
+        link: "https://www.google.com/search?q=%22Isu+Provokatif+Berpotensi+Picu+Kerusuhan%2C+Masyarakat+Diminta+Tak+Mudah+Terpengaruh%22+Okezone"
+      },
+      {
+        media: "iNews / RCTI+",
+        badge: "bg-sky-50 text-sky-800 border-sky-200",
+        judul: "Rampai Nusantara Dukung Program Prabowo-Gibran, Imbau Masyarakat Tak Terprovokasi",
+        ringkas: "Konsolidasi pengurus wilayah dan daerah se-Jawa Tengah di Semarang, 6–8 Agustus 2026.",
+        ts: new Date("2026-08-08").getTime(),
+        waktuLabel: "8 Agu 2026",
+        link: "https://www.google.com/search?q=%22Rampai+Nusantara+Dukung+Program+Prabowo-Gibran%2C+Imbau+Masyarakat+Tak+Terprovokasi%22"
+      },
+      {
+        media: "Merdeka",
+        badge: "bg-rose-50 text-rose-800 border-rose-200",
+        judul: "Muncul Dorongan Kursi Ketua Umum Usai Jokowi Kantongi Anggota PSI",
+        ringkas: "Liputan kunjungan pengurus RN ke kediaman Jokowi di Solo.",
+        ts: new Date("2026-09-30").getTime(),
+        waktuLabel: "30 Sep 2026",
+        link: "https://www.google.com/search?q=%22Muncul+Dorongan+Kursi+Ketua+Umum+Usai+Jokowi+Kantongi+Anggota+PSI%22+Merdeka"
+      },
+      {
+        media: "Merdeka",
+        badge: "bg-rose-50 text-rose-800 border-rose-200",
+        judul: "Relawan Jokowi Soal Wacana Gibran-Dedi Mulyadi: Sulit Dikalahkan",
+        ringkas: "Pandangan politik terkait dinamika wacana tokoh nasional.",
+        ts: new Date("2026-09-30").getTime(),
+        waktuLabel: "30 Sep 2026",
+        link: "https://www.google.com/search?q=%22Relawan+Jokowi+Soal+Wacana+Gibran-Dedi+Mulyadi%3A+Sulit+Dikalahkan%22+Merdeka"
+      },
+      {
+        media: "KompasTV",
+        badge: "bg-indigo-50 text-indigo-700 border-indigo-200",
+        judul: "Relawan Dukung Gibran 2029, Semar: Masa Mau Dilarang?",
+        ringkas: "Tanggapan Ketum Rampai Nusantara Mardiansyah Semar dalam program Bola Liar terkait aspirasi dukungan relawan 2029.",
+        ts: new Date("2026-11-14").getTime(),
+        waktuLabel: "14 Nov 2026",
+        link: "http://www.youtube.com/watch?v=yAFGtJFcKkc"
+      }
+    ];
+
+    const FEED_SOSMED_RN = {
+      youtube: [
+        { judul: "Relawan Dukung Gibran 2029, Semar: Masa Mau Dilarang?", tanggal: "14/11/2026", thumb: "https://img.youtube.com/vi/yAFGtJFcKkc/hqdefault.jpg", link: "http://www.youtube.com/watch?v=yAFGtJFcKkc" },
+        { judul: "Update Tayangan Resmi #2 @rampainusantara_official", tanggal: "Terbaru #2", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #3 @rampainusantara_official", tanggal: "Terbaru #3", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #4 @rampainusantara_official", tanggal: "Terbaru #4", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #5 @rampainusantara_official", tanggal: "Terbaru #5", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #6 @rampainusantara_official", tanggal: "Terbaru #6", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #7 @rampainusantara_official", tanggal: "Terbaru #7", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #8 @rampainusantara_official", tanggal: "Terbaru #8", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" },
+        { judul: "Update Tayangan Resmi #9 @rampainusantara_official", tanggal: "Terbaru #9", thumb: "", link: "https://www.youtube.com/@Rampai_Nusantara" }
+      ],
+      tiktok: Array.from({ length: 9 }, (_, i) => ({
+        label: `Video #${i + 1}`,
+        img: `tiktok-post-${i + 1}.jpg`,
+        link: "https://www.tiktok.com/@rampainusantara_official"
+      })),
+      instagram: Array.from({ length: 9 }, (_, i) => ({
+        label: `Post #${i + 1}`,
+        img: `ig-post-${i + 1}.jpg`,
+        link: "https://www.instagram.com/rampainusantara_official/"
+      })),
+      facebook: Array.from({ length: 9 }, (_, i) => ({
+        label: `Foto #${i + 1}`,
+        img: `fb-post-${i + 1}.jpg`,
+        link: "https://www.facebook.com/profile.php?id=61595219347834&sk=photos"
+      }))
+    };
+
+    function renderYouTubeList(items) {
+      const container = document.getElementById("ytRssList");
+      container.innerHTML = items.slice(0, 9).map((vid, idx) => {
+        const thumbHtml = vid.thumb
+          ? `<img src="${vid.thumb}" alt="${vid.judul}" onerror="this.style.display='none';" class="w-20 h-14 rounded-lg object-cover shrink-0 bg-slate-100" />`
+          : `<div class="w-20 h-14 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-xs font-bold text-slate-500 shrink-0">#${idx + 1}</div>`;
+        return `
+          <a href="${vid.link}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/80 transition">
+            ${thumbHtml}
+            <div class="min-w-0">
+              <div class="font-bold text-slate-900 text-xs leading-snug line-clamp-2">${vid.judul}</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">${vid.tanggal || ""}</div>
+            </div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    function renderGrid9(containerId, items, showPlayIcon) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = items.slice(0, 9).map((post, idx) => `
+        <a
+          href="${post.link}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center text-center p-2"
+        >
+          <img
+            src="${post.img}"
+            alt="${post.label}"
+            onload="this.nextElementSibling.style.display='none';"
+            onerror="this.style.display='none';"
+            class="w-full h-full object-cover group-hover:scale-105 transition"
+          />
+          <div class="flex flex-col items-center justify-center gap-1">
+            <img src="logo-rn.png" alt="" onerror="this.style.display='none';" class="w-7 h-7 object-cover rounded-full opacity-80" />
+            <span class="text-[11px] font-bold text-slate-600">${post.label || `#${idx + 1}`}</span>
+          </div>
+          ${showPlayIcon ? `<span class="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-black/55 text-white text-[10px] flex items-center justify-center">&#9654;</span>` : ""}
+        </a>
+      `).join("");
+    }
+
+    let portalAktif = "Semua";
+    let urutanLamaKeBaru = true;
+
+    function renderFilter() {
+      const portals = ["Semua", ...new Set(BERITA_ARSIP_RN.map(item => item.media))];
+      const container = document.getElementById("filterPortal");
+      container.innerHTML = portals.map(portal => {
+        const aktif = portal === portalAktif;
+        const cls = aktif
+          ? "bg-sky-600 text-white border-sky-600"
+          : "bg-white text-slate-700 border-slate-200 hover:border-sky-300";
+        return `<button type="button" data-portal="${portal}" class="portal-btn px-3.5 py-1.5 rounded-full border text-xs font-semibold transition ${cls}">${portal}</button>`;
+      }).join("");
+
+      container.querySelectorAll(".portal-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          portalAktif = btn.dataset.portal;
+          renderFilter();
+          renderKliping();
+        });
+      });
+    }
+
+    function renderKliping() {
+      const container = document.getElementById("daftarKliping");
+      const items = BERITA_ARSIP_RN
+        .filter(item => portalAktif === "Semua" || item.media === portalAktif)
+        .sort((a, b) => urutanLamaKeBaru ? a.ts - b.ts : b.ts - a.ts);
+
+      document.getElementById("sortLabel").textContent = urutanLamaKeBaru
+        ? "Urutan: Lama \u2192 Terbaru"
+        : "Urutan: Terbaru \u2192 Lama";
+
+      if (!items.length) {
+        container.innerHTML = `<div class="col-span-full bg-white border border-slate-200 rounded-xl p-6 text-sm text-slate-500">Belum ada kliping untuk portal ini.</div>`;
+        return;
+      }
+
+      container.innerHTML = items.map(item => `
+        <article class="bg-white rounded-2xl border border-slate-200 p-5 flex flex-col justify-between gap-4 shadow-sm hover:border-sky-300 transition">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold border ${item.badge}">${item.media}</span>
+              <span class="text-xs text-slate-500 font-medium">${item.waktuLabel}</span>
+            </div>
+            <h3 class="font-bold text-slate-900 text-base leading-snug">${item.judul}</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${item.ringkas}</p>
+          </div>
+          <div>
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-sky-700 hover:text-sky-800">
+              Buka Sumber Berita &rarr;
+            </a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    async function muatYouTubeRSS() {
+      if (!KONFIG.youtubeChannelId || !KONFIG.youtubeChannelId.startsWith("UC")) return;
+      try {
+        const feedUrl = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${KONFIG.youtubeChannelId}`);
+        const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${feedUrl}`);
+        const data = await res.json();
+        if (!data.items || !data.items.length) return;
+
+        const mapped = data.items.slice(0, 9).map(vid => {
+          const idMatch = (vid.link || "").match(/(?:v=|\/)([0-9A-Za-z_-]{11})/);
+          return {
+            judul: vid.title,
+            tanggal: vid.pubDate ? new Date(vid.pubDate).toLocaleDateString("id-ID") : "",
+            thumb: idMatch ? `https://img.youtube.com/vi/${idMatch[1]}/hqdefault.jpg` : (vid.thumbnail || ""),
+            link: vid.link
+          };
+        });
+        renderYouTubeList(mapped);
+      } catch (_) {}
+    }
+
+    document.getElementById("btnSortWaktu").addEventListener("click", () => {
+      urutanLamaKeBaru = !urutanLamaKeBaru;
+      renderKliping();
+    });
+
+    document.getElementById("btnWaFloating").addEventListener("click", (e) => {
+      e.preventDefault();
+      const teks = encodeURIComponent("Halo Sekretariat Rampai Nusantara, saya ingin berkoordinasi / menyampaikan aspirasi.");
+      window.open(`https://wa.me/${NOMOR_WA_SEKRETARIAT}?text=${teks}`, "_blank", "noopener,noreferrer");
+    });
+
+    document.getElementById("btnSalinAlamat").addEventListener("click", async (e) => {
+      const btn = e.currentTarget;
+      try {
+        await navigator.clipboard.writeText(ALAMAT_SEKRETARIAT);
+        const labelAsli = btn.textContent;
+        btn.textContent = "Alamat Tersalin";
+        setTimeout(() => { btn.textContent = labelAsli; }, 2000);
+      } catch (_) {
+        btn.textContent = ALAMAT_SEKRETARIAT;
+      }
+    });
+
+    document.getElementById("formWA").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nama = document.getElementById("namaPengirim").value.trim();
+      const keperluan = document.getElementById("keperluan").value;
+      const pesan = document.getElementById("pesanWA").value.trim();
+      const teks = `Halo Sekretariat Rampai Nusantara,%0A*Keperluan:* ${encodeURIComponent(keperluan)}%0A*Nama:* ${encodeURIComponent(nama)}%0A*Detail:* ${encodeURIComponent(pesan)}`;
+      window.open(`https://wa.me/${NOMOR_WA_SEKRETARIAT}?text=${teks}`, "_blank", "noopener,noreferrer");
+    });
+
+    renderFilter();
+    renderKliping();
+    renderYouTubeList(FEED_SOSMED_RN.youtube);
+    renderGrid9("tiktokPostGrid", FEED_SOSMED_RN.tiktok, true);
+    renderGrid9("igPostGrid", FEED_SOSMED_RN.instagram, true);
+    renderGrid9("fbPostGrid", FEED_SOSMED_RN.facebook, false);
+    muatYouTubeRSS();
+  </script>
+</body>
+</html>
